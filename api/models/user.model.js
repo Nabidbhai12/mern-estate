@@ -15,8 +15,8 @@ const userSchema = new mongoose.Schema({
         required:true,
         unique:true
     },
-    timestamps: true // Add the property assignment for timestamps
-});
+     // Add the property assignment for timestamps
+},{timestamps: true});
 //model
 const User=mongoose.model('User',userSchema);
 //to use this model anywhere else in our code
